@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Roadmap for Beginners — Topic Order &amp; Starter Problems</title>
+  <meta name="description" content="A step-by-step DSA roadmap for beginners: 11 topics in a logical order, one free resource per topic, and 5-8 starter problems each. Built for Indian B.Tech students.">
+  <link rel="canonical" href="https://dsastarterhub.com/dsa-roadmap/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="DSA Roadmap for Beginners — Step-by-Step Topic Order">
+  <meta property="og:description" content="11 topics in the right order, with a free resource and starter problems for each. A clear path for B.Tech students starting DSA.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dsastarterhub.com/dsa-roadmap/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="DSA Starter Hub">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dsastarterhub.com/" },
+      { "@type": "ListItem", "position": 2, "name": "DSA Roadmap", "item": "https://dsastarterhub.com/dsa-roadmap/" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: ItemList (Roadmap topics) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "DSA Roadmap for Beginners",
+    "description": "11 topics in recommended learning order for students beginning data structures and algorithms.",
+    "numberOfItems": 11,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1,  "name": "Complexity Basics", "url": "https://dsastarterhub.com/complexity-basics/" },
+      { "@type": "ListItem", "position": 2,  "name": "Arrays" },
+      { "@type": "ListItem", "position": 3,  "name": "Strings" },
+      { "@type": "ListItem", "position": 4,  "name": "Searching and Sorting" },
+      { "@type": "ListItem", "position": 5,  "name": "Linked Lists" },
+      { "@type": "ListItem", "position": 6,  "name": "Stacks and Queues" },
+      { "@type": "ListItem", "position": 7,  "name": "Hashing" },
+      { "@type": "ListItem", "position": 8,  "name": "Recursion" },
+      { "@type": "ListItem", "position": 9,  "name": "Trees" },
+      { "@type": "ListItem", "position": 10, "name": "Graphs" },
+      { "@type": "ListItem", "position": 11, "name": "Introduction to Dynamic Programming" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" role="banner">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a href="/" class="site-logo" aria-label="DSA Starter Hub home page">
+        <svg aria-hidden="true" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="6" fill="hsl(222,68%,48%)"/>
+          <path d="M7 20V8l7 6 7-6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        DSA Starter Hub
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dsa-roadmap/">Roadmap</a></li>
+        <li><a href="/complexity-basics/">Complexity</a></li>
+        <li><a href="/dsa-resources/">Resources</a></li>
+        <li><a href="/practice-problems/">Practice</a></li>
+        <li><a href="/practice-platforms/">Platforms</a></li>
+        <li><a href="/interview-preparation/">Interview Prep</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/updates/">Updates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content" class="page-content">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">DSA Roadmap</li>
+        </ol>
+      </nav>
+
+      <h1>DSA Roadmap for Beginners: 11 Topics in the Right Order</h1>
+      <p>This roadmap puts data structures and algorithms topics in a <strong>specific sequence</strong> so each topic builds on what you learned before. We explain <em>why</em> this order works, give you <strong>one checked free resource</strong> and one alternative per topic, and list <strong>5–8 starter problems</strong> with the pattern each one teaches.</p>
+
+      <div class="info-box">
+        <p><strong>How to use this page:</strong> Work through the topics top to bottom. Don't skip ahead — the ordering matters. For each topic, (1) read the linked resource, (2) solve the starter problems, (3) move on. If a concept feels hard, check our <a href="/faq/">FAQ</a> — it's normal.</p>
+      </div>
+
+      <div class="info-box">
+        <p><strong>Honesty note:</strong> Difficulty labels (easy/medium) are our own judgement. "Easy" means a beginner who just read about the topic should be able to approach it with some effort. "Medium" means you may need to think longer or look up the pattern afterwards. Your experience may differ.</p>
+      </div>
+
+      <!-- Quick nav -->
+      <nav class="quick-nav" aria-label="On-page topic navigation">
+        <h2 id="topic-nav">Jump to a Topic</h2>
+        <ol>
+          <li><a href="#complexity">Complexity Basics</a> (prerequisite)</li>
+          <li><a href="#arrays">Arrays</a></li>
+          <li><a href="#strings">Strings</a></li>
+          <li><a href="#searching-sorting">Searching &amp; Sorting</a></li>
+          <li><a href="#linked-lists">Linked Lists</a></li>
+          <li><a href="#stacks-queues">Stacks &amp; Queues</a></li>
+          <li><a href="#hashing">Hashing</a></li>
+          <li><a href="#recursion">Recursion</a></li>
+          <li><a href="#trees">Trees</a></li>
+          <li><a href="#graphs">Graphs</a></li>
+          <li><a href="#dp">Intro to Dynamic Programming</a></li>
+        </ol>
+      </nav>
+
+      <hr class="section-divider">
+
+      <!-- ==================== TOPIC 1: COMPLEXITY ==================== -->
+      <div class="roadmap-step" id="complexity">
+        <div class="step-header">
+          <span class="step-number">0</span>
+          <h3>Prerequisite: Complexity Basics (Big-O)</h3>
+        </div>
+        <p class="step-meta">Why first? → You need Big-O to evaluate every solution you write. Without it, you can't tell if your approach is efficient enough.</p>
+        <p>Before any data structure, learn how to express the time and space cost of an algorithm. You don't need to be a mathematician — just understand O(1), O(n), O(n²), and O(log n) with simple examples.</p>
+        <p>Read our dedicated <a href="/complexity-basics/">Complexity Basics</a> page for a fuller explanation.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation" rel="noopener noreferrer" target="_blank">Khan Academy — Asymptotic Notation</a> — visual, beginner-friendly, free. Explains Big-O with clear analogies and step-by-step examples.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=D6xkbGLQesk" rel="noopener noreferrer" target="_blank">CS Dojo — Introduction to Big O Notation (YouTube)</a> — 15-minute video, good if you prefer watching over reading.</li>
+        </ul>
+        <p>For more resources on all topics, see the <a href="/dsa-resources/">Free DSA Resources</a> page.</p>
+
+        <h4>Starter Problems</h4>
+        <p>Complexity analysis isn't usually practiced through judge problems, but try these:</p>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/running-sum-of-1d-array/" rel="noopener noreferrer" target="_blank">Running Sum of 1D Array (LeetCode 1480)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Single loop, O(n) — practice identifying linear time.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/find-the-highest-altitude/" rel="noopener noreferrer" target="_blank">Find the Highest Altitude (LeetCode 1732)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Prefix sum in O(n) — shows how one pass is enough.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/richest-customer-wealth/" rel="noopener noreferrer" target="_blank">Richest Customer Wealth (LeetCode 1672)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Nested loop, O(m × n) — shows quadratic thinking on 2D input.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/fizz-buzz/" rel="noopener noreferrer" target="_blank">Fizz Buzz (LeetCode 412)</a></td><td><span class="badge badge-easy">Easy</span></td><td>O(n) single pass with conditionals — warm-up for writing clean loops.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/number-of-good-pairs/" rel="noopener noreferrer" target="_blank">Number of Good Pairs (LeetCode 1512)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Brute-force is O(n²); can you see the O(n) approach using counting?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>More practice for every topic on the <a href="/practice-problems/">Practice Problems</a> page.</p>
+      </div>
+
+      <!-- ==================== TOPIC 2: ARRAYS ==================== -->
+      <div class="roadmap-step" id="arrays">
+        <div class="step-header">
+          <span class="step-number">1</span>
+          <h3>Arrays</h3>
+        </div>
+        <p class="step-meta">Why second? → Arrays are the simplest data structure. They teach iteration, indexing, and in-place manipulation — skills you'll use in every later topic.</p>
+        <p>Learn how arrays store elements in contiguous memory, how to traverse them with loops, and common techniques like two pointers, sliding window, and prefix sums.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/array-data-structure-guide/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Array Data Structure Guide</a> — comprehensive written reference covering operations, common problems, and complexity of each operation.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=n60Dt6_bhHo" rel="noopener noreferrer" target="_blank">Kunal Kushwaha — Complete Arrays Tutorial (YouTube)</a> — long-form video with Java examples, popular among Indian students.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/" rel="noopener noreferrer" target="_blank">Two Sum (LeetCode 1)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Brute-force nested loop → hash map optimisation. Classic intro problem.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" rel="noopener noreferrer" target="_blank">Best Time to Buy and Sell Stock (LeetCode 121)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Single pass with a running minimum — teaches "track state while iterating".</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/move-zeroes/" rel="noopener noreferrer" target="_blank">Move Zeroes (LeetCode 283)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-pointer swap — fundamental in-place rearrangement.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener noreferrer" target="_blank">Contains Duplicate (LeetCode 217)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Use a set for O(n) lookup — bridges to hashing later.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/maximum-subarray/" rel="noopener noreferrer" target="_blank">Maximum Subarray (LeetCode 53)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Kadane's algorithm — the first "named algorithm" most students learn.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/rotate-array/" rel="noopener noreferrer" target="_blank">Rotate Array (LeetCode 189)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Reversal trick — shows that clever in-place operations beat extra space.</td></tr>
+              <tr><td>7</td><td><a href="https://leetcode.com/problems/merge-sorted-array/" rel="noopener noreferrer" target="_blank">Merge Sorted Array (LeetCode 88)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-pointer merge from the end — prepares for merge sort later.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 3: STRINGS ==================== -->
+      <div class="roadmap-step" id="strings">
+        <div class="step-header">
+          <span class="step-number">2</span>
+          <h3>Strings</h3>
+        </div>
+        <p class="step-meta">Why after arrays? → Strings are essentially character arrays. The same traversal, two-pointer, and sliding-window techniques apply, plus you learn pattern matching.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/string-data-structure/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — String Data Structure</a> — covers immutability, common operations, and problem patterns with code examples.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=rL8X2mlNHPM" rel="noopener noreferrer" target="_blank">take U forward — Strings Playlist (YouTube)</a> — video-first approach with Hindi explanations, popular in India.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/valid-anagram/" rel="noopener noreferrer" target="_blank">Valid Anagram (LeetCode 242)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Frequency counting with an array or map — core string technique.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/valid-palindrome/" rel="noopener noreferrer" target="_blank">Valid Palindrome (LeetCode 125)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two pointers from both ends — mirror check pattern.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/reverse-string/" rel="noopener noreferrer" target="_blank">Reverse String (LeetCode 344)</a></td><td><span class="badge badge-easy">Easy</span></td><td>In-place swap with two pointers — same as array reversal.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-common-prefix/" rel="noopener noreferrer" target="_blank">Longest Common Prefix (LeetCode 14)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Vertical scanning across an array of strings.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" rel="noopener noreferrer" target="_blank">Longest Substring Without Repeating Characters (LeetCode 3)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Sliding window with a set — a must-know pattern for interviews.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/first-unique-character-in-a-string/" rel="noopener noreferrer" target="_blank">First Unique Character in a String (LeetCode 387)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Frequency array, then second pass — two-pass pattern.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 4: SEARCHING & SORTING ==================== -->
+      <div class="roadmap-step" id="searching-sorting">
+        <div class="step-header">
+          <span class="step-number">3</span>
+          <h3>Searching &amp; Sorting</h3>
+        </div>
+        <p class="step-meta">Why here? → These are foundational algorithms that you'll use inside other data structures. Binary search appears in trees, sorting is a prerequisite for many two-pointer and greedy problems.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.khanacademy.org/computing/computer-science/algorithms" rel="noopener noreferrer" target="_blank">Khan Academy — Algorithms</a> — interactive visualisations of binary search, selection sort, merge sort, and quick sort with step-by-step breakdowns.</li>
+          <li><strong>Alternative:</strong> <a href="https://visualgo.net/en/sorting" rel="noopener noreferrer" target="_blank">VisuAlgo — Sorting</a> — animated sorting visualiser; lets you step through each algorithm at your own pace.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/binary-search/" rel="noopener noreferrer" target="_blank">Binary Search (LeetCode 704)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Standard binary search template — learn it once, use it everywhere.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/first-bad-version/" rel="noopener noreferrer" target="_blank">First Bad Version (LeetCode 278)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Binary search on a boolean condition — common interview variant.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/search-insert-position/" rel="noopener noreferrer" target="_blank">Search Insert Position (LeetCode 35)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Lower-bound binary search — teaches "what if the target isn't found?".</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/sort-colors/" rel="noopener noreferrer" target="_blank">Sort Colors (LeetCode 75)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Dutch National Flag / three-way partitioning — classic in-place sort.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/merge-intervals/" rel="noopener noreferrer" target="_blank">Merge Intervals (LeetCode 56)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Sort + linear scan — "sort first, then solve" pattern.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/squares-of-a-sorted-array/" rel="noopener noreferrer" target="_blank">Squares of a Sorted Array (LeetCode 977)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two pointers from ends — merge-like technique on sorted data.</td></tr>
+              <tr><td>7</td><td><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" rel="noopener noreferrer" target="_blank">Kth Largest Element (LeetCode 215)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Quick-select / heap — shows partitioning for order statistics.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 5: LINKED LISTS ==================== -->
+      <div class="roadmap-step" id="linked-lists">
+        <div class="step-header">
+          <span class="step-number">4</span>
+          <h3>Linked Lists</h3>
+        </div>
+        <p class="step-meta">Why after sorting? → Linked lists introduce pointer-based thinking and dynamic memory. You've already mastered arrays and iteration, so you can now handle non-contiguous data.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/data-structures/linked-list/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Linked List</a> — covers singly, doubly, and circular lists with code in C++, Java, and Python.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=Nq7ok-OyEpg" rel="noopener noreferrer" target="_blank">Apna College — Linked Lists (YouTube)</a> — Hindi-medium video walkthrough with Java, popular with Indian B.Tech students.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/reverse-linked-list/" rel="noopener noreferrer" target="_blank">Reverse Linked List (LeetCode 206)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Iterative pointer reversal — the most fundamental linked-list operation.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/merge-two-sorted-lists/" rel="noopener noreferrer" target="_blank">Merge Two Sorted Lists (LeetCode 21)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Dummy-head merge — same two-pointer pattern from arrays, now with nodes.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/linked-list-cycle/" rel="noopener noreferrer" target="_blank">Linked List Cycle (LeetCode 141)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Floyd's slow-fast pointer — detects cycles in O(1) space.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/middle-of-the-linked-list/" rel="noopener noreferrer" target="_blank">Middle of the Linked List (LeetCode 876)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Slow-fast pointer — finding the midpoint without knowing length.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" rel="noopener noreferrer" target="_blank">Remove Nth Node From End (LeetCode 19)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Two pointers with a gap — one-pass deletion.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/palindrome-linked-list/" rel="noopener noreferrer" target="_blank">Palindrome Linked List (LeetCode 234)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Combines midpoint-finding, reversal, and comparison — a mini project.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 6: STACKS & QUEUES ==================== -->
+      <div class="roadmap-step" id="stacks-queues">
+        <div class="step-header">
+          <span class="step-number">5</span>
+          <h3>Stacks &amp; Queues</h3>
+        </div>
+        <p class="step-meta">Why here? → LIFO/FIFO structures use the linked-list and array skills you already have. They're prerequisites for BFS (queues) and backtracking (stacks) in later topics.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/stack-data-structure/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Stack Data Structure</a> — clear explanations of push/pop, applications (balanced brackets, postfix), and implementation choices.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=rHQI4a7ZtSA" rel="noopener noreferrer" target="_blank">Abdul Bari — Stack and Queue (YouTube)</a> — concise, board-style teaching with excellent diagrams.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/valid-parentheses/" rel="noopener noreferrer" target="_blank">Valid Parentheses (LeetCode 20)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Stack-based matching — the textbook stack application.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/implement-queue-using-stacks/" rel="noopener noreferrer" target="_blank">Implement Queue Using Stacks (LeetCode 232)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-stack technique — understanding LIFO↔FIFO conversion.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/min-stack/" rel="noopener noreferrer" target="_blank">Min Stack (LeetCode 155)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Auxiliary stack — maintaining extra state alongside the main structure.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/next-greater-element-i/" rel="noopener noreferrer" target="_blank">Next Greater Element I (LeetCode 496)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Monotonic stack — finding the next larger element in one pass.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/daily-temperatures/" rel="noopener noreferrer" target="_blank">Daily Temperatures (LeetCode 739)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Monotonic stack applied to indices — a pattern that appears in many harder problems.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/number-of-recent-calls/" rel="noopener noreferrer" target="_blank">Number of Recent Calls (LeetCode 933)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Queue usage — sliding window of timestamps with a deque.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 7: HASHING ==================== -->
+      <div class="roadmap-step" id="hashing">
+        <div class="step-header">
+          <span class="step-number">6</span>
+          <h3>Hashing</h3>
+        </div>
+        <p class="step-meta">Why here? → Hash maps give you O(1) average lookup and appear in solutions for almost every later topic. Many array/string problems you already solved could be improved with hashing.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/hashing-data-structure/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Hashing Data Structure</a> — covers hash functions, collision resolution, and common applications with code.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=KEs5UyBJ39g" rel="noopener noreferrer" target="_blank">HackerRank — Hash Tables (YouTube)</a> — short, clear animated explanation under 10 minutes.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/" rel="noopener noreferrer" target="_blank">Two Sum (LeetCode 1)</a> — revisited</td><td><span class="badge badge-easy">Easy</span></td><td>Now solve it with a hash map instead of nested loops — see the speedup.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/group-anagrams/" rel="noopener noreferrer" target="_blank">Group Anagrams (LeetCode 49)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Using sorted strings as hash keys to group related items.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/" rel="noopener noreferrer" target="_blank">Intersection of Two Arrays II (LeetCode 350)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Frequency map comparison — counting and matching.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-consecutive-sequence/" rel="noopener noreferrer" target="_blank">Longest Consecutive Sequence (LeetCode 128)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Set-based lookup to find sequence starts — O(n) despite appearances.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/ransom-note/" rel="noopener noreferrer" target="_blank">Ransom Note (LeetCode 383)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Character frequency counting — similar to anagram check.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/subarray-sum-equals-k/" rel="noopener noreferrer" target="_blank">Subarray Sum Equals K (LeetCode 560)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Prefix sum + hash map — a powerful combination for subarray problems.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 8: RECURSION ==================== -->
+      <div class="roadmap-step" id="recursion">
+        <div class="step-header">
+          <span class="step-number">7</span>
+          <h3>Recursion</h3>
+        </div>
+        <p class="step-meta">Why before trees? → Tree traversals, graph DFS, and dynamic programming all rely on recursion. Build the "break into subproblems" thinking habit before you tackle non-linear data structures.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/introduction-to-recursion-2/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Introduction to Recursion</a> — starts with simple examples (factorial, Fibonacci), builds to backtracking and subsets.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=kHi1DUhp9kM" rel="noopener noreferrer" target="_blank">Aditya Verma — Recursion Playlist (YouTube)</a> — beloved by Indian students for its "IBH" (input-base-hypothesis) method of thinking about recursion.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/power-of-two/" rel="noopener noreferrer" target="_blank">Power of Two (LeetCode 231)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simple base case + recursive halving — warm-up for recursive thinking.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/fibonacci-number/" rel="noopener noreferrer" target="_blank">Fibonacci Number (LeetCode 509)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Classic two-branch recursion — also shows why memoisation matters.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/climbing-stairs/" rel="noopener noreferrer" target="_blank">Climbing Stairs (LeetCode 70)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Fibonacci variant — bridges recursion to DP thinking.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/subsets/" rel="noopener noreferrer" target="_blank">Subsets (LeetCode 78)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Include/exclude recursion — generates all 2^n subsets.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/permutations/" rel="noopener noreferrer" target="_blank">Permutations (LeetCode 46)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Backtracking — choose, recurse, un-choose pattern.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/merge-two-sorted-lists/" rel="noopener noreferrer" target="_blank">Merge Two Sorted Lists (LeetCode 21)</a> — recursive version</td><td><span class="badge badge-easy">Easy</span></td><td>Solve it recursively now; compare with your earlier iterative solution.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 9: TREES ==================== -->
+      <div class="roadmap-step" id="trees">
+        <div class="step-header">
+          <span class="step-number">8</span>
+          <h3>Trees</h3>
+        </div>
+        <p class="step-meta">Why after recursion? → Tree traversals (inorder, preorder, postorder) are naturally recursive. You also use queues (BFS) from the stacks &amp; queues topic.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/binary-tree-data-structure/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Binary Tree Data Structure</a> — covers traversals, BST operations, height/depth, and common patterns.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=_ANrF3FJm7I" rel="noopener noreferrer" target="_blank">take U forward — Binary Trees Playlist (YouTube)</a> — structured playlist covering basics to advanced tree problems.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" rel="noopener noreferrer" target="_blank">Maximum Depth of Binary Tree (LeetCode 104)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Basic DFS — recursive depth counting, the simplest tree problem.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/invert-binary-tree/" rel="noopener noreferrer" target="_blank">Invert Binary Tree (LeetCode 226)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Recursive swap of children — understanding structural modification.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" rel="noopener noreferrer" target="_blank">Binary Tree Level Order Traversal (LeetCode 102)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BFS with a queue — level-by-level processing.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/symmetric-tree/" rel="noopener noreferrer" target="_blank">Symmetric Tree (LeetCode 101)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simultaneous recursion on two subtrees — mirror comparison.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/validate-binary-search-tree/" rel="noopener noreferrer" target="_blank">Validate Binary Search Tree (LeetCode 98)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Inorder traversal or min/max range — BST property verification.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/path-sum/" rel="noopener noreferrer" target="_blank">Path Sum (LeetCode 112)</a></td><td><span class="badge badge-easy">Easy</span></td><td>DFS with running total — root-to-leaf path traversal.</td></tr>
+              <tr><td>7</td><td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" rel="noopener noreferrer" target="_blank">Lowest Common Ancestor of BST (LeetCode 235)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BST property exploitation — split point logic.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 10: GRAPHS ==================== -->
+      <div class="roadmap-step" id="graphs">
+        <div class="step-header">
+          <span class="step-number">9</span>
+          <h3>Graphs</h3>
+        </div>
+        <p class="step-meta">Why after trees? → A tree is a special graph (connected, acyclic). You already know DFS and BFS from trees — now apply them to general graphs with cycles and multiple components.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Graph Data Structure</a> — covers representation (adjacency list/matrix), BFS, DFS, shortest path, and cycle detection.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=tWVWeAqZ0WU" rel="noopener noreferrer" target="_blank">William Fiset — Graph Theory Playlist (YouTube)</a> — deep, animated explanations of graph algorithms; excellent for visual learners.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/number-of-islands/" rel="noopener noreferrer" target="_blank">Number of Islands (LeetCode 200)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Grid BFS/DFS — flood fill to count connected components.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/flood-fill/" rel="noopener noreferrer" target="_blank">Flood Fill (LeetCode 733)</a></td><td><span class="badge badge-easy">Easy</span></td><td>BFS/DFS on a 2D grid — simpler version of "Number of Islands".</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/clone-graph/" rel="noopener noreferrer" target="_blank">Clone Graph (LeetCode 133)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BFS/DFS with a visited map — deep copy of a graph.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/course-schedule/" rel="noopener noreferrer" target="_blank">Course Schedule (LeetCode 207)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Topological sort / cycle detection — real-world prerequisite modelling.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/rotting-oranges/" rel="noopener noreferrer" target="_blank">Rotting Oranges (LeetCode 994)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Multi-source BFS — simultaneous expansion from multiple starting points.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/max-area-of-island/" rel="noopener noreferrer" target="_blank">Max Area of Island (LeetCode 695)</a></td><td><span class="badge badge-medium">Medium</span></td><td>DFS with accumulation — tracking size of connected components.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ==================== TOPIC 11: DYNAMIC PROGRAMMING ==================== -->
+      <div class="roadmap-step" id="dp">
+        <div class="step-header">
+          <span class="step-number">10</span>
+          <h3>Introduction to Dynamic Programming</h3>
+        </div>
+        <p class="step-meta">Why last? → DP combines recursion with optimal substructure. It's the hardest topic for beginners but natural if you've built up recursion and memoisation skills. This is an introduction, not a complete guide.</p>
+
+        <h4>Recommended Resource</h4>
+        <ul>
+          <li><strong>Primary:</strong> <a href="https://www.geeksforgeeks.org/dynamic-programming/" rel="noopener noreferrer" target="_blank">GeeksforGeeks — Dynamic Programming</a> — starts with overlapping subproblems and optimal substructure, then walks through classic DP problems with top-down and bottom-up approaches.</li>
+          <li><strong>Alternative:</strong> <a href="https://www.youtube.com/watch?v=nqowUJzG-iM" rel="noopener noreferrer" target="_blank">Aditya Verma — DP Playlist (YouTube)</a> — the most popular DP playlist among Indian engineering students; starts from the recursion-to-DP conversion pattern.</li>
+        </ul>
+
+        <h4>Starter Problems</h4>
+        <div class="table-wrap">
+          <table class="problem-table">
+            <thead>
+              <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern / Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><a href="https://leetcode.com/problems/climbing-stairs/" rel="noopener noreferrer" target="_blank">Climbing Stairs (LeetCode 70)</a> — with memoisation</td><td><span class="badge badge-easy">Easy</span></td><td>Fibonacci-style DP — compare your recursive and memoised solutions.</td></tr>
+              <tr><td>2</td><td><a href="https://leetcode.com/problems/house-robber/" rel="noopener noreferrer" target="_blank">House Robber (LeetCode 198)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Linear DP — include/exclude decision at each step.</td></tr>
+              <tr><td>3</td><td><a href="https://leetcode.com/problems/coin-change/" rel="noopener noreferrer" target="_blank">Coin Change (LeetCode 322)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Unbounded knapsack variant — building up from smaller amounts.</td></tr>
+              <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-increasing-subsequence/" rel="noopener noreferrer" target="_blank">Longest Increasing Subsequence (LeetCode 300)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Classic 1D DP — O(n²) is acceptable; O(n log n) is a bonus.</td></tr>
+              <tr><td>5</td><td><a href="https://leetcode.com/problems/unique-paths/" rel="noopener noreferrer" target="_blank">Unique Paths (LeetCode 62)</a></td><td><span class="badge badge-medium">Medium</span></td><td>2D grid DP — the standard "how many ways to reach bottom-right" problem.</td></tr>
+              <tr><td>6</td><td><a href="https://leetcode.com/problems/min-cost-climbing-stairs/" rel="noopener noreferrer" target="_blank">Min Cost Climbing Stairs (LeetCode 746)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simple DP with a cost function — space-optimised to O(1).</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tip-box">
+          <p><strong>What comes next?</strong> This roadmap covers the fundamentals. Once you're comfortable here, explore advanced topics like segment trees, tries, advanced graph algorithms, and harder DP patterns. Check our <a href="/interview-preparation/">interview preparation page</a> for a 2-week revision plan that covers these 11 topics.</p>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- Summary & next steps -->
+      <h2 id="summary">Summary: Your Learning Path</h2>
+      <p>Here's the full sequence at a glance:</p>
+      <ol>
+        <li><strong>Complexity Basics</strong> → learn Big-O</li>
+        <li><strong>Arrays</strong> → iteration, two pointers, sliding window</li>
+        <li><strong>Strings</strong> → character arrays, frequency counting</li>
+        <li><strong>Searching &amp; Sorting</strong> → binary search, merge sort, quick sort</li>
+        <li><strong>Linked Lists</strong> → pointer manipulation, fast-slow technique</li>
+        <li><strong>Stacks &amp; Queues</strong> → LIFO/FIFO, monotonic stacks</li>
+        <li><strong>Hashing</strong> → O(1) lookups, frequency maps, prefix sums</li>
+        <li><strong>Recursion</strong> → base case/recursive case, backtracking</li>
+        <li><strong>Trees</strong> → DFS, BFS, BST operations</li>
+        <li><strong>Graphs</strong> → adjacency representation, BFS/DFS, topological sort</li>
+        <li><strong>Intro to DP</strong> → memoisation, tabulation, classic problems</li>
+      </ol>
+      <p>Estimated time: <strong>3–4 months</strong> at 2 hours/day of focused study. Don't rush — understanding beats speed.</p>
+      <p><strong>Next steps:</strong></p>
+      <ul>
+        <li>Visit the <a href="/dsa-resources/">Free DSA Resources</a> page for a consolidated list of all recommended materials.</li>
+        <li>Go to the <a href="/practice-problems/">Practice Problems</a> page for all starter problems in one place.</li>
+        <li>Read the <a href="/faq/">FAQ</a> if you have doubts about languages, difficulty, or time commitment.</li>
+        <li>When you've covered the roadmap, use the <a href="/interview-preparation/">interview preparation checklist</a>.</li>
+      </ul>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <h4>DSA Starter Hub</h4>
+        <p>A student project for CSET343 (SEO course). Free, ad-free, and open. We guide your first steps in DSA — we don't replace the resources that teach it.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/dsa-roadmap/">DSA Roadmap</a></li>
+          <li><a href="/complexity-basics/">Complexity Basics</a></li>
+          <li><a href="/dsa-resources/">Free Resources</a></li>
+          <li><a href="/practice-problems/">Practice Problems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="/practice-platforms/">Practice Platforms</a></li>
+          <li><a href="/interview-preparation/">Interview Preparation</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/about/">About This Project</a></li>
+          <li><a href="/updates/">Updates</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Built as a CSET343 Milestone I project. No ads, no tracking, no affiliate links. All external links go to free resources.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

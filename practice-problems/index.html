@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy DSA Problems for Beginners — Starter Set by Topic</title>
+  <meta name="description" content="5-8 easy and medium DSA problems per topic, labelled by difficulty and the pattern each teaches. Linked to LeetCode and GeeksforGeeks — solve them there, not here.">
+  <link rel="canonical" href="https://dsastarterhub.com/practice-problems/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Easy DSA Problems for Beginners — Starter Set by Topic">
+  <meta property="og:description" content="Curated starter problems for each DSA topic with difficulty labels and patterns. Linked to source judges.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dsastarterhub.com/practice-problems/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="DSA Starter Hub">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dsastarterhub.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Practice Problems", "item": "https://dsastarterhub.com/practice-problems/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a href="/" class="site-logo" aria-label="DSA Starter Hub home page">
+        <svg aria-hidden="true" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="6" fill="hsl(222,68%,48%)"/><path d="M7 20V8l7 6 7-6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        DSA Starter Hub
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="/">Home</a></li><li><a href="/dsa-roadmap/">Roadmap</a></li><li><a href="/complexity-basics/">Complexity</a></li><li><a href="/dsa-resources/">Resources</a></li><li><a href="/practice-problems/">Practice</a></li><li><a href="/practice-platforms/">Platforms</a></li><li><a href="/interview-preparation/">Interview Prep</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/about/">About</a></li><li><a href="/updates/">Updates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-content">
+    <div class="container">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol><li><a href="/">Home</a></li><li aria-current="page">Practice Problems</li></ol>
+      </nav>
+
+      <h1>Easy DSA Problems for Beginners — Starter Set by Topic</h1>
+      <p>Every problem below is from a free online judge (mostly <a href="https://leetcode.com" rel="noopener noreferrer" target="_blank">LeetCode</a>). We don't host or reproduce problems — we link to them so you can solve them on the source platform. Each problem is labelled with a difficulty level and the <strong>pattern it teaches</strong>.</p>
+
+      <div class="info-box">
+        <p><strong>Honesty note:</strong> Difficulty labels (easy/medium) are our own subjective assessment. "Easy" = approachable if you just finished reading about the topic. "Medium" = you may need to think longer or look up the pattern. Your mileage may vary.</p>
+      </div>
+
+      <div class="tip-box">
+        <p><strong>How to use this page:</strong> Follow the <a href="/dsa-roadmap/">DSA Roadmap</a> order. After reading the resource for a topic, come here and solve its starter problems. Don't jump ahead — each section assumes knowledge from earlier ones.</p>
+      </div>
+
+      <nav class="quick-nav" aria-label="Jump to topic problems">
+        <h2 id="jump-to-topic">Jump to a Topic</h2>
+        <ol>
+          <li><a href="#complexity-problems">Complexity Warm-ups</a></li>
+          <li><a href="#array-problems">Arrays</a></li>
+          <li><a href="#string-problems">Strings</a></li>
+          <li><a href="#search-sort-problems">Searching &amp; Sorting</a></li>
+          <li><a href="#linkedlist-problems">Linked Lists</a></li>
+          <li><a href="#stack-queue-problems">Stacks &amp; Queues</a></li>
+          <li><a href="#hashing-problems">Hashing</a></li>
+          <li><a href="#recursion-problems">Recursion</a></li>
+          <li><a href="#tree-problems">Trees</a></li>
+          <li><a href="#graph-problems">Graphs</a></li>
+          <li><a href="#dp-problems">Introduction to DP</a></li>
+        </ol>
+      </nav>
+
+      <!-- COMPLEXITY -->
+      <h2 id="complexity-problems">Complexity Warm-ups</h2>
+      <p>Resource: <a href="/dsa-resources/#complexity-resources">Complexity Basics resources</a> · Roadmap: <a href="/dsa-roadmap/#complexity">Step 0</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/running-sum-of-1d-array/" rel="noopener noreferrer" target="_blank">Running Sum of 1D Array (LC 1480)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Single loop, O(n)</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/find-the-highest-altitude/" rel="noopener noreferrer" target="_blank">Find the Highest Altitude (LC 1732)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Prefix sum, O(n)</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/richest-customer-wealth/" rel="noopener noreferrer" target="_blank">Richest Customer Wealth (LC 1672)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Nested loop, O(m×n)</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/fizz-buzz/" rel="noopener noreferrer" target="_blank">Fizz Buzz (LC 412)</a></td><td><span class="badge badge-easy">Easy</span></td><td>O(n) with conditionals</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/number-of-good-pairs/" rel="noopener noreferrer" target="_blank">Number of Good Pairs (LC 1512)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Brute O(n²) vs counting O(n)</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- ARRAYS -->
+      <h2 id="array-problems">Arrays</h2>
+      <p>Resource: <a href="/dsa-resources/#array-resources">Array resources</a> · Roadmap: <a href="/dsa-roadmap/#arrays">Step 1</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/" rel="noopener noreferrer" target="_blank">Two Sum (LC 1)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Brute-force → hash map optimisation</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" rel="noopener noreferrer" target="_blank">Best Time to Buy and Sell Stock (LC 121)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Running minimum, one pass</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/move-zeroes/" rel="noopener noreferrer" target="_blank">Move Zeroes (LC 283)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-pointer in-place rearrangement</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener noreferrer" target="_blank">Contains Duplicate (LC 217)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Set for O(n) lookup</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/maximum-subarray/" rel="noopener noreferrer" target="_blank">Maximum Subarray (LC 53)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Kadane's algorithm</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/rotate-array/" rel="noopener noreferrer" target="_blank">Rotate Array (LC 189)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Reversal trick, in-place</td></tr>
+          <tr><td>7</td><td><a href="https://leetcode.com/problems/merge-sorted-array/" rel="noopener noreferrer" target="_blank">Merge Sorted Array (LC 88)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-pointer merge from end</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- STRINGS -->
+      <h2 id="string-problems">Strings</h2>
+      <p>Resource: <a href="/dsa-resources/#string-resources">String resources</a> · Roadmap: <a href="/dsa-roadmap/#strings">Step 2</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/valid-anagram/" rel="noopener noreferrer" target="_blank">Valid Anagram (LC 242)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Frequency counting</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/valid-palindrome/" rel="noopener noreferrer" target="_blank">Valid Palindrome (LC 125)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two pointers, mirror check</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/reverse-string/" rel="noopener noreferrer" target="_blank">Reverse String (LC 344)</a></td><td><span class="badge badge-easy">Easy</span></td><td>In-place two-pointer swap</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-common-prefix/" rel="noopener noreferrer" target="_blank">Longest Common Prefix (LC 14)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Vertical scanning</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" rel="noopener noreferrer" target="_blank">Longest Substring Without Repeating Characters (LC 3)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Sliding window with set</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/first-unique-character-in-a-string/" rel="noopener noreferrer" target="_blank">First Unique Character (LC 387)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-pass frequency array</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- SEARCHING & SORTING -->
+      <h2 id="search-sort-problems">Searching &amp; Sorting</h2>
+      <p>Resource: <a href="/dsa-resources/#search-sort-resources">Search &amp; sort resources</a> · Roadmap: <a href="/dsa-roadmap/#searching-sorting">Step 3</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/binary-search/" rel="noopener noreferrer" target="_blank">Binary Search (LC 704)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Standard binary search template</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/first-bad-version/" rel="noopener noreferrer" target="_blank">First Bad Version (LC 278)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Binary search on boolean</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/search-insert-position/" rel="noopener noreferrer" target="_blank">Search Insert Position (LC 35)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Lower-bound binary search</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/sort-colors/" rel="noopener noreferrer" target="_blank">Sort Colors (LC 75)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Dutch National Flag partition</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/merge-intervals/" rel="noopener noreferrer" target="_blank">Merge Intervals (LC 56)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Sort + linear scan</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/squares-of-a-sorted-array/" rel="noopener noreferrer" target="_blank">Squares of a Sorted Array (LC 977)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two pointers from ends</td></tr>
+          <tr><td>7</td><td><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" rel="noopener noreferrer" target="_blank">Kth Largest Element (LC 215)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Quick-select / heap</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- LINKED LISTS -->
+      <h2 id="linkedlist-problems">Linked Lists</h2>
+      <p>Resource: <a href="/dsa-resources/#linkedlist-resources">Linked list resources</a> · Roadmap: <a href="/dsa-roadmap/#linked-lists">Step 4</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/reverse-linked-list/" rel="noopener noreferrer" target="_blank">Reverse Linked List (LC 206)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Iterative pointer reversal</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/merge-two-sorted-lists/" rel="noopener noreferrer" target="_blank">Merge Two Sorted Lists (LC 21)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Dummy-head merge</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/linked-list-cycle/" rel="noopener noreferrer" target="_blank">Linked List Cycle (LC 141)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Floyd's slow-fast pointer</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/middle-of-the-linked-list/" rel="noopener noreferrer" target="_blank">Middle of Linked List (LC 876)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Slow-fast pointer midpoint</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" rel="noopener noreferrer" target="_blank">Remove Nth Node From End (LC 19)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Two pointers with gap</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/palindrome-linked-list/" rel="noopener noreferrer" target="_blank">Palindrome Linked List (LC 234)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Midpoint + reverse + compare</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- STACKS & QUEUES -->
+      <h2 id="stack-queue-problems">Stacks &amp; Queues</h2>
+      <p>Resource: <a href="/dsa-resources/#stack-queue-resources">Stack &amp; queue resources</a> · Roadmap: <a href="/dsa-roadmap/#stacks-queues">Step 5</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/valid-parentheses/" rel="noopener noreferrer" target="_blank">Valid Parentheses (LC 20)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Stack matching</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/implement-queue-using-stacks/" rel="noopener noreferrer" target="_blank">Queue Using Stacks (LC 232)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-stack LIFO→FIFO</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/min-stack/" rel="noopener noreferrer" target="_blank">Min Stack (LC 155)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Auxiliary stack for extra state</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/next-greater-element-i/" rel="noopener noreferrer" target="_blank">Next Greater Element I (LC 496)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Monotonic stack</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/daily-temperatures/" rel="noopener noreferrer" target="_blank">Daily Temperatures (LC 739)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Monotonic stack on indices</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/number-of-recent-calls/" rel="noopener noreferrer" target="_blank">Recent Calls (LC 933)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Queue / sliding window</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- HASHING -->
+      <h2 id="hashing-problems">Hashing</h2>
+      <p>Resource: <a href="/dsa-resources/#hashing-resources">Hashing resources</a> · Roadmap: <a href="/dsa-roadmap/#hashing">Step 6</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/" rel="noopener noreferrer" target="_blank">Two Sum (LC 1) — with hash map</a></td><td><span class="badge badge-easy">Easy</span></td><td>Hash map for O(n) pair lookup</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/group-anagrams/" rel="noopener noreferrer" target="_blank">Group Anagrams (LC 49)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Sorted-string keys</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/" rel="noopener noreferrer" target="_blank">Intersection of Two Arrays II (LC 350)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Frequency map comparison</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-consecutive-sequence/" rel="noopener noreferrer" target="_blank">Longest Consecutive Sequence (LC 128)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Set-based sequence detection</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/ransom-note/" rel="noopener noreferrer" target="_blank">Ransom Note (LC 383)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Character frequency counting</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/subarray-sum-equals-k/" rel="noopener noreferrer" target="_blank">Subarray Sum Equals K (LC 560)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Prefix sum + hash map</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- RECURSION -->
+      <h2 id="recursion-problems">Recursion</h2>
+      <p>Resource: <a href="/dsa-resources/#recursion-resources">Recursion resources</a> · Roadmap: <a href="/dsa-roadmap/#recursion">Step 7</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/power-of-two/" rel="noopener noreferrer" target="_blank">Power of Two (LC 231)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simple base case + halving</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/fibonacci-number/" rel="noopener noreferrer" target="_blank">Fibonacci Number (LC 509)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Two-branch recursion</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/climbing-stairs/" rel="noopener noreferrer" target="_blank">Climbing Stairs (LC 70)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Fibonacci variant → DP bridge</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/subsets/" rel="noopener noreferrer" target="_blank">Subsets (LC 78)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Include/exclude recursion</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/permutations/" rel="noopener noreferrer" target="_blank">Permutations (LC 46)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Backtracking pattern</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/merge-two-sorted-lists/" rel="noopener noreferrer" target="_blank">Merge Two Sorted Lists (LC 21) — recursive</a></td><td><span class="badge badge-easy">Easy</span></td><td>Recursive merge comparison</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- TREES -->
+      <h2 id="tree-problems">Trees</h2>
+      <p>Resource: <a href="/dsa-resources/#tree-resources">Tree resources</a> · Roadmap: <a href="/dsa-roadmap/#trees">Step 8</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" rel="noopener noreferrer" target="_blank">Max Depth of Binary Tree (LC 104)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Basic DFS depth counting</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/invert-binary-tree/" rel="noopener noreferrer" target="_blank">Invert Binary Tree (LC 226)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Recursive child swap</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" rel="noopener noreferrer" target="_blank">Level Order Traversal (LC 102)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BFS with queue</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/symmetric-tree/" rel="noopener noreferrer" target="_blank">Symmetric Tree (LC 101)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Dual subtree recursion</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/validate-binary-search-tree/" rel="noopener noreferrer" target="_blank">Validate BST (LC 98)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Inorder / min-max range</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/path-sum/" rel="noopener noreferrer" target="_blank">Path Sum (LC 112)</a></td><td><span class="badge badge-easy">Easy</span></td><td>DFS with running total</td></tr>
+          <tr><td>7</td><td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" rel="noopener noreferrer" target="_blank">LCA of BST (LC 235)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BST split-point logic</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- GRAPHS -->
+      <h2 id="graph-problems">Graphs</h2>
+      <p>Resource: <a href="/dsa-resources/#graph-resources">Graph resources</a> · Roadmap: <a href="/dsa-roadmap/#graphs">Step 9</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/number-of-islands/" rel="noopener noreferrer" target="_blank">Number of Islands (LC 200)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Grid BFS/DFS flood fill</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/flood-fill/" rel="noopener noreferrer" target="_blank">Flood Fill (LC 733)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simple grid DFS</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/clone-graph/" rel="noopener noreferrer" target="_blank">Clone Graph (LC 133)</a></td><td><span class="badge badge-medium">Medium</span></td><td>BFS/DFS with visited map</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/course-schedule/" rel="noopener noreferrer" target="_blank">Course Schedule (LC 207)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Topological sort / cycle detection</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/rotting-oranges/" rel="noopener noreferrer" target="_blank">Rotting Oranges (LC 994)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Multi-source BFS</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/max-area-of-island/" rel="noopener noreferrer" target="_blank">Max Area of Island (LC 695)</a></td><td><span class="badge badge-medium">Medium</span></td><td>DFS with accumulation</td></tr>
+        </tbody></table>
+      </div>
+
+      <!-- DP -->
+      <h2 id="dp-problems">Introduction to Dynamic Programming</h2>
+      <p>Resource: <a href="/dsa-resources/#dp-resources">DP resources</a> · Roadmap: <a href="/dsa-roadmap/#dp">Step 10</a></p>
+      <div class="table-wrap">
+        <table class="problem-table"><thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Pattern</th></tr></thead><tbody>
+          <tr><td>1</td><td><a href="https://leetcode.com/problems/climbing-stairs/" rel="noopener noreferrer" target="_blank">Climbing Stairs (LC 70) — with memoisation</a></td><td><span class="badge badge-easy">Easy</span></td><td>Fibonacci DP</td></tr>
+          <tr><td>2</td><td><a href="https://leetcode.com/problems/house-robber/" rel="noopener noreferrer" target="_blank">House Robber (LC 198)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Linear include/exclude DP</td></tr>
+          <tr><td>3</td><td><a href="https://leetcode.com/problems/coin-change/" rel="noopener noreferrer" target="_blank">Coin Change (LC 322)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Unbounded knapsack</td></tr>
+          <tr><td>4</td><td><a href="https://leetcode.com/problems/longest-increasing-subsequence/" rel="noopener noreferrer" target="_blank">Longest Increasing Subsequence (LC 300)</a></td><td><span class="badge badge-medium">Medium</span></td><td>Classic 1D DP</td></tr>
+          <tr><td>5</td><td><a href="https://leetcode.com/problems/unique-paths/" rel="noopener noreferrer" target="_blank">Unique Paths (LC 62)</a></td><td><span class="badge badge-medium">Medium</span></td><td>2D grid DP</td></tr>
+          <tr><td>6</td><td><a href="https://leetcode.com/problems/min-cost-climbing-stairs/" rel="noopener noreferrer" target="_blank">Min Cost Climbing Stairs (LC 746)</a></td><td><span class="badge badge-easy">Easy</span></td><td>Simple cost DP, O(1) space</td></tr>
+        </tbody></table>
+      </div>
+
+      <hr class="section-divider">
+
+      <h2 id="total-count">Total Problem Count</h2>
+      <p>This starter set contains <strong>67 problems</strong> across 11 topics. If you solve 3–5 per day, you'll finish in about <strong>2–3 weeks</strong>. That's enough to build a solid foundation before moving on to bigger problem lists.</p>
+      <p>For where to solve these, see our <a href="/practice-platforms/">Practice Platforms</a> comparison. For the full learning order, go back to the <a href="/dsa-roadmap/">DSA Roadmap</a>.</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div><h4>DSA Starter Hub</h4><p>A student project for CSET343. Free, ad-free, and open.</p></div>
+      <div><h4>Pages</h4><ul><li><a href="/">Home</a></li><li><a href="/dsa-roadmap/">DSA Roadmap</a></li><li><a href="/complexity-basics/">Complexity Basics</a></li><li><a href="/dsa-resources/">Free Resources</a></li><li><a href="/practice-problems/">Practice Problems</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="/practice-platforms/">Practice Platforms</a></li><li><a href="/interview-preparation/">Interview Preparation</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/about/">About This Project</a></li><li><a href="/updates/">Updates</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>Built as a CSET343 Milestone I project. No ads, no tracking, no affiliate links.</p></div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

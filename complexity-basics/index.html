@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Complexity for Beginners — Big-O Explained Simply</title>
+  <meta name="description" content="Learn time and space complexity from scratch. We explain Big-O notation with simple examples so you can evaluate any DSA solution — no math degree needed.">
+  <link rel="canonical" href="https://dsastarterhub.com/complexity-basics/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Time Complexity for Beginners — Big-O Explained Simply">
+  <meta property="og:description" content="Understand Big-O notation with plain examples. Learn O(1), O(n), O(n²), and O(log n) so you can evaluate your own DSA solutions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dsastarterhub.com/complexity-basics/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="DSA Starter Hub">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dsastarterhub.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Complexity Basics", "item": "https://dsastarterhub.com/complexity-basics/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a href="/" class="site-logo" aria-label="DSA Starter Hub home page">
+        <svg aria-hidden="true" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="6" fill="hsl(222,68%,48%)"/><path d="M7 20V8l7 6 7-6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        DSA Starter Hub
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dsa-roadmap/">Roadmap</a></li>
+        <li><a href="/complexity-basics/">Complexity</a></li>
+        <li><a href="/dsa-resources/">Resources</a></li>
+        <li><a href="/practice-problems/">Practice</a></li>
+        <li><a href="/practice-platforms/">Platforms</a></li>
+        <li><a href="/interview-preparation/">Interview Prep</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/updates/">Updates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-content">
+    <div class="container">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Complexity Basics</li>
+        </ol>
+      </nav>
+
+      <h1>Time and Space Complexity for Beginners</h1>
+      <p>Before you learn any data structure, you need a way to <strong>measure how fast and how memory-hungry</strong> your code is. That's what Big-O notation does. This page explains the essentials in plain language — no proofs, no heavy math.</p>
+
+      <div class="info-box">
+        <p><strong>Why learn this first?</strong> Every topic in the <a href="/dsa-roadmap/">DSA Roadmap</a> references time and space complexity. If you skip this, you won't be able to tell whether your solution is good enough. Read this page once, then revisit it whenever you need a refresher.</p>
+      </div>
+
+      <h2 id="what-is-bigo">What Is Big-O Notation?</h2>
+      <p>Big-O describes the <strong>upper bound</strong> of how an algorithm's runtime (or memory use) grows as the input size <em>n</em> increases. It answers: <em>"If I double my input, roughly how much longer will this take?"</em></p>
+      <p>We care about the <strong>growth rate</strong>, not the exact number of operations. Constants and lower-order terms are dropped because they don't matter at scale.</p>
+
+      <h2 id="common-complexities">The 5 Complexities You Must Know</h2>
+
+      <h3 id="o1">O(1) — Constant Time</h3>
+      <p><strong>What it means:</strong> The operation takes the same amount of time regardless of input size.</p>
+      <p><strong>Example:</strong> Accessing an array element by index (<code>arr[5]</code>). Whether the array has 10 elements or 10 million, getting the 5th element takes one step.</p>
+      <p><strong>When you see it:</strong> Hash map lookups (average case), pushing/popping from a stack, checking if a number is even.</p>
+
+      <h3 id="ologn">O(log n) — Logarithmic Time</h3>
+      <p><strong>What it means:</strong> Each step cuts the remaining work in half. Doubling the input adds only one extra step.</p>
+      <p><strong>Example:</strong> Binary search. Searching in a sorted array of 1,000 elements takes about 10 steps (log₂ 1000 ≈ 10). Searching in 1,000,000 elements takes about 20 steps.</p>
+      <p><strong>When you see it:</strong> Binary search, balanced BST operations, divide-and-conquer algorithms that discard half the data each time.</p>
+
+      <h3 id="on">O(n) — Linear Time</h3>
+      <p><strong>What it means:</strong> The work grows proportionally to the input. Double the input, double the time.</p>
+      <p><strong>Example:</strong> A single loop through an array to find the maximum value. If the array has <em>n</em> elements, you look at each one exactly once.</p>
+      <p><strong>When you see it:</strong> Any algorithm that visits every element once — linear search, computing a sum, traversing a linked list.</p>
+
+      <h3 id="onlogn">O(n log n) — Linearithmic Time</h3>
+      <p><strong>What it means:</strong> Slightly worse than linear but much better than quadratic. Common in efficient sorting algorithms.</p>
+      <p><strong>Example:</strong> Merge sort and quick sort (average case). They divide the array in half (log n levels) and do O(n) work at each level.</p>
+      <p><strong>When you see it:</strong> Efficient sorting, some divide-and-conquer problems, problems where "sort first, then solve" is the approach.</p>
+
+      <h3 id="on2">O(n²) — Quadratic Time</h3>
+      <p><strong>What it means:</strong> The work grows with the square of the input. Double the input, quadruple the time.</p>
+      <p><strong>Example:</strong> A nested loop where the outer loop runs <em>n</em> times and the inner loop also runs <em>n</em> times — like checking every pair in an array (brute-force Two Sum).</p>
+      <p><strong>When you see it:</strong> Bubble sort, selection sort, brute-force pair comparisons. If <em>n</em> is larger than about 10,000, O(n²) is usually too slow.</p>
+
+      <h2 id="comparison">How They Compare</h2>
+      <p>Here's a rough idea of how these grow for different input sizes:</p>
+      <div class="table-wrap">
+        <table class="problem-table">
+          <thead>
+            <tr><th>n</th><th>O(1)</th><th>O(log n)</th><th>O(n)</th><th>O(n log n)</th><th>O(n²)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10</td><td>1</td><td>~3</td><td>10</td><td>~33</td><td>100</td></tr>
+            <tr><td>100</td><td>1</td><td>~7</td><td>100</td><td>~664</td><td>10,000</td></tr>
+            <tr><td>1,000</td><td>1</td><td>~10</td><td>1,000</td><td>~9,966</td><td>1,000,000</td></tr>
+            <tr><td>1,000,000</td><td>1</td><td>~20</td><td>1,000,000</td><td>~19,931,569</td><td>10<sup>12</sup></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>At n = 1,000,000, O(n²) performs a <em>trillion</em> operations. That would take minutes or hours on most computers. O(n log n) does about 20 million — easily under a second.</p>
+
+      <h2 id="space-complexity">Space Complexity</h2>
+      <p>Space complexity measures <strong>how much extra memory</strong> your algorithm uses (beyond the input itself). The same Big-O notation applies:</p>
+      <ul>
+        <li><strong>O(1) space:</strong> You use a fixed number of variables (e.g., swapping two numbers with a temp variable).</li>
+        <li><strong>O(n) space:</strong> You create a new array or hash map proportional to the input size.</li>
+        <li><strong>O(n) stack space:</strong> Recursive calls can use O(n) space on the call stack if recursion depth is proportional to <em>n</em>.</li>
+      </ul>
+      <p>When a problem says "solve it in O(1) extra space", it means don't create new data structures that grow with the input — modify the input in-place or use a constant number of variables.</p>
+
+      <h2 id="how-to-analyse">How to Analyse Your Own Code</h2>
+      <p>Follow these steps when looking at your solution:</p>
+      <ol>
+        <li><strong>Count the loops:</strong> A single loop over <em>n</em> elements = O(n). A nested loop = O(n²). Three nested loops = O(n³).</li>
+        <li><strong>Look for halving:</strong> If the loop cuts the data in half each time (like binary search), it's O(log n).</li>
+        <li><strong>Drop constants:</strong> O(2n) simplifies to O(n). O(n/2) simplifies to O(n). The constant doesn't change the growth rate.</li>
+        <li><strong>Take the dominant term:</strong> O(n² + n) simplifies to O(n²) because n² grows much faster than n.</li>
+        <li><strong>Check recursive calls:</strong> If a function calls itself twice (like naive Fibonacci), it's often O(2ⁿ). If it calls itself once and halves the input, it's O(log n).</li>
+      </ol>
+
+      <div class="tip-box">
+        <p><strong>Quick rule of thumb:</strong> Most competitive programming judges allow about 10⁸ operations per second. If <em>n</em> = 10⁵ and your algorithm is O(n²), that's 10¹⁰ operations — it will time out. You need O(n log n) or better.</p>
+      </div>
+
+      <h2 id="common-mistakes">Common Mistakes Beginners Make</h2>
+      <ul>
+        <li><strong>Confusing Big-O with exact time:</strong> O(n) doesn't mean your code runs in exactly <em>n</em> milliseconds. It describes the <em>growth pattern</em>, not the absolute speed.</li>
+        <li><strong>Ignoring space complexity:</strong> An O(n) time solution that also uses O(n) extra space may not be ideal. Many interviewers ask for O(1) space.</li>
+        <li><strong>Forgetting best, worst, and average cases:</strong> Quick sort is O(n log n) on average but O(n²) in the worst case. When someone says "quick sort is O(n log n)", they usually mean the average case.</li>
+        <li><strong>Over-optimising too early:</strong> Get a correct O(n²) solution first, understand why it works, then optimise. A working brute-force beats a broken clever approach.</li>
+      </ul>
+
+      <h2 id="next-steps">Next Steps</h2>
+      <p>Now that you understand Big-O, you're ready to start the <a href="/dsa-roadmap/#arrays">first topic in the roadmap: Arrays</a>. As you solve each problem, practise stating its time and space complexity before submitting.</p>
+      <p>For the full recommended learning order, go back to the <a href="/dsa-roadmap/">DSA Roadmap</a>.</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <h4>DSA Starter Hub</h4>
+        <p>A student project for CSET343 (SEO course). Free, ad-free, and open.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/dsa-roadmap/">DSA Roadmap</a></li>
+          <li><a href="/complexity-basics/">Complexity Basics</a></li>
+          <li><a href="/dsa-resources/">Free Resources</a></li>
+          <li><a href="/practice-problems/">Practice Problems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="/practice-platforms/">Practice Platforms</a></li>
+          <li><a href="/interview-preparation/">Interview Preparation</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/about/">About This Project</a></li>
+          <li><a href="/updates/">Updates</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Built as a CSET343 Milestone I project. No ads, no tracking, no affiliate links.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
